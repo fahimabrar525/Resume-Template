@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'IBM Plex Sans Thai Looped', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    height: 100vh;
+    background: #e8e8e8;
+}
+.header{
+    background: #8c98aa;
+    position: relative;
+}
+.passport-photo{
+    width:150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+.surname{
+    font-size: 2.5rem;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%,-50%);
+    font-weight: bold;
+}
+.personal-info{
+    background: #b3bcc8;
+}
+
+.heading{
+    background: #ffffff;
+    color: #8392a2;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    padding: 10px;
+    border-radius: 15px;
+}
+.obj{
+    color:#676952;
+    /* text-align: justify; */
+    font-size: 0.8rem;
+}
+.obj ul li{
+    list-style-type: none;
+}
+.icon{
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 5px;
+    font-size: 0.6rem;
+    margin:5px;
+}
+.info{
+    font-size: 0.7rem;
+    color:#675952;
+}
+/* skills */
+.skill-desc ul li{
+    list-style-type: none;
+    margin:30px 0;
+    text-transform: uppercase;
+    position: relative;
+    color: #676952;
+    font-size: 0.8rem;
+}
+
+.skill-desc li::before{
+    content: '';
+    width:100%;
+    height:10px;
+    background-color: #ffffff;
+    border-radius: 1000px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left:0;
+}
+
+.skill-desc li::after{
+    content: '';
+    width:0;
+    height:10px;
+    background-color: #002e2e;
+    border-radius: 1000px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left:0;
+
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity:0.5;
+}
+
+.skill-desc li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width:100%;
+    }
+}
+
+.skill-desc li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        width:90%;
+    }
+}
+
+.skill-desc li.boot::after{
+    animation-name: boot;
+}
+@keyframes boot {
+    to{
+        width:90%;
+    }
+}
+
+.skill-desc li.java::after{
+    animation-name: java;
+}
+@keyframes java {
+    to{
+        width:85%;
+    }
+}
+
+.skill-desc li.react::after{
+    animation-name: react;
+}
+@keyframes react {
+    to{
+        width:75%;
+    }
+}
+
+.skill-desc li.php::after{
+    animation-name: php;
+}
+@keyframes php {
+    to{
+        width:70%;
+    }
+}
+/* skills end */
+
+.heading2{
+    background: #8c98aa;
+    color: #ffffff;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 15px;
+   
+}
+.obj2{
+    color:#676952;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.obj2 ul li{
+    list-style-type: none;
+}
+.obj3{
+    color:#676952;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .surname{
+        font-size: 1.5rem;
+    }
+    .passport-photo{
+        display: block;
+        margin-left:0;
+        width:120px;
+        height: 120px;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .surname{
+        font-size: 1.5rem;
+    }
+    .passport-photo{
+        display: block;
+        margin-left:0;
+        width:130px;
+        height: 130px;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px){
+    .surname{
+        font-size: 2rem;
+    }
+    .passport-photo{
+        width:150px;
+        height: 150px;
+        border: 2px solid white;
+        border-radius: 50%;
+        display: block;
+        margin: 20px auto;
+    }
+    
+  }
+
+ 
